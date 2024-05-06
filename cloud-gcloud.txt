@@ -1,0 +1,12 @@
+open gcp create app engine 
+create an application in app engine in standard
+open app creation
+terminal opening 
+if the project we want is not set :  gcloud config set project <project id>
+git clone google cloud platform GitHub
+
+cd to the hello world directory
+
+gcloud app deploy
+
+gcloud app browse

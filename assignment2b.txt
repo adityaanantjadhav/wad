@@ -1,0 +1,16 @@
+install docker
+run command docker ps
+docker images to check if it is running or not
+
+docker pull OpenJDK
+
+docker run --name JAVA -it -d OpenJDK
+
+
+docker exec -it JAVA jshell
+
+docker ps
+
+docker stop <container id>
+
+docker container rm <container id>

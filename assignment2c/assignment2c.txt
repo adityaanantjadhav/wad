@@ -1,0 +1,45 @@
+create a folder and open it in vs code
+open terminal of vs code
+to check node is installed - npm --version
+to install angular:  npm install -g @angular/cli@latest
+
+
+run following command if project is not created:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+create an angular project:-
+ng new testAng --no-standalone --routing --ssr=false
+
+now once project is created we can try to run it:
+cd name of project
+ng serve
+
+Generate component:
+ng g c login
+ng g c register
+ng g c show
+
+
+Now remember to write <router-outlet></router-outlet> inside app.component.html this enables routing
+
+write routes inside app-routing.module.ts 
+const routes: Routes = [
+  {
+    path:"register",
+    component:RegisterComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"show",
+    component:ShowComponent
+  }
+];
+
+import form in app.module.ts
+import {FormModule} from '@angular/forms';
+inside @NgModule{
+    FormModule
+}

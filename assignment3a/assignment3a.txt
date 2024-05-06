@@ -1,0 +1,21 @@
+create a folder and open it in vs
+open command prompt in this folder
+npm init
+press enter
+press enter
+package.json is created in folder
+create index.js in folder
+on command prompt: npm install express --save
+in index.js ->
+const express=require('express');		//to import express
+const app=express();    //called express function
+create a public(name of folder) folder inside the main project folder
+create index.html inside public folder
+write any html in that
+Then inside index.js->
+app.use(express.static('public'));
+app.listen(4000,()=>{
+    console.log("Server is started");
+})
+Run the code in command prompt by typing ->node index.js
+in browser type localhost:4000
